@@ -21,3 +21,10 @@ console.log(native)
 
 const {native : myNative3} = obj; // same name as in object
 console.log(myNative3)
+
+
+const obj2 = {...[1,2,3,4,5]}; // valid 
+const arr2 = [...{a:1,b:2}]; // refrence error
+// only iterable datastructures are spreable - object is not iterable
+console.log(obj2)
+console.log(arr2)
